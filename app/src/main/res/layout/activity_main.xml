@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="@color/white"
+        android:elevation="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/icon_plus"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:src="@drawable/icon_plus" />
+
+        <ImageView
+            android:id="@+id/icon_minus"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:src="@drawable/icon_minus" />
+
+        <ImageView
+            android:id="@+id/icon_recenter"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:src="@drawable/icon_recenter" />
+
+    </LinearLayout>
+</RelativeLayout>
